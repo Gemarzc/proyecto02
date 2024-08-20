@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  min-height: 100svh;
+}
+
+.menu {
+  width: 130px;
+  height: 130px;
+  cursor: pointer;
+}
+
+div a {
+  padding: 0;
+}
+
+h1 {
+  background-image: url('https://res.cloudinary.com/ditkcrwd0/image/upload/v1710157318/project-landing/fondo_proyecto_id3crv.png');
+  object-fit: contain;
+  background-size: 50% 100%;
+  width: 100%;
+  height: 16pc;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+ol {
+  display: flex;
+  padding: 18px;
+  align-items: end;
+  justify-content: space-evenly;
+  background-color: rgb(201, 201, 201);
+  list-style-type: none;
+  color: black;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  font-weight: bold;
+}
+
+input {
+  height: 25px;
+  color: purple;
+}
+
+input:hover {
+  background-color: rgb(183, 115, 247);
+  color: black;
+}
+
+.search {
+  height: 30px;
+  width: 80px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  background-color: rgb(183, 115, 247);
+  border-radius: 5px;
+  border: solid rgb(183, 115, 247);
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#productos > div {
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 6px 23px -15px rgba(0, 0, 0, 0.75);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.estrellas {
+  gap: 10px;
+}
+
+.estrella {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.rellena {
+  background-color: yellow;
+}
+
+a {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#productos > div:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+#azul {
+  font-size: 30px;
+  color: black;
+  border-radius: 5px;
+  border: solid rgb(56, 225, 231) 5px;
+  display: flex;
+  justify-content: start;
+  width: 25%;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  margin-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+#red {
+  font-size: 30px;
+  color: black;
+  border-radius: 5px;
+  border: solid red 5px;
+  display: flex;
+  justify-content: start;
+  width: 25%;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  margin-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: 'Courier New';
+  font-weight: bold;
+  padding: 10px;
+}
+
+p {
+  color: grey;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 30px;
+    height: 5pc;
+  }
+  ol {
+    display: flex;
+    justify-content: space-between;
+  }
+  ol a {
+    padding-left: 25px;
+  }
+  label {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  article {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  a {
+    font-size: 15px;
+  }
+  img {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+
+  button {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  aside {
+    font-size: 15px;
+    width: 50%;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1040px) and (min-width: 741px) {
+  h1 {
+    font-size: 40px;
+    background-size: 100% 100%;
+  }
+  ol {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  ol a {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  section a {
+    font-size: 20px;
+  }
+
+  label {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  aside {
+    font-size: 18px;
+    width: 50%;
+    margin-left: 25%;
+  }
+  article {
+    font-size: 20px;
+    text-align: center;
+  }
+}
