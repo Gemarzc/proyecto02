@@ -1,5 +1,3 @@
-import './style.css'
-
 const productos = [
   {
     id: 1,
