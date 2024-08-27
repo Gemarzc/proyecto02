@@ -15,7 +15,7 @@ const productos = [
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710154053/project-landing/caballo-ajedrez-negro-01-600x600_rryyy5.jpg',
     estrellas: 5,
     colores: ['Negro', 'Blanco'],
-    modelo: ['Cuadro']
+    modelo: ['Decoración']
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const productos = [
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153970/project-landing/il_794xN.5587074338_hmwr_txl8tv.webp',
     estrellas: 3,
     colores: ['Negro', 'Blanco', 'Amarillo'],
-    modelo: ['Piezas Decoración']
+    modelo: ['Decoración']
   },
   {
     id: 4,
@@ -130,6 +130,18 @@ const productos = [
 
 const MODELOS = []
 
+/* let MODELO = ''
+
+const filtrar = () => {
+  const filtered = []
+  for (const product of productos) {
+    if (MODELO === product.modelo) {
+      filtered.push(product)
+    }
+  }
+  printProducts(filtered)
+} */
+
 const fillModelos = (products) => {
   MODELOS.splice(0)
   for (const product of products) {
@@ -154,6 +166,10 @@ const createSelectModel = () => {
     selectModel.appendChild(option)
   }
   divFiltros.appendChild(selectModel)
+  selectModel.addEventListener('change', (event) => {
+    MODELO = event.target.value
+    filtrar()
+  })
 }
 
 const printProducts = (products) => {
