@@ -6,7 +6,7 @@ const productos = [
     img: 'https://res.cloudinary.com/ditkcrwd0/image/upload/v1710153890/project-landing/shopping_u0outn.webp',
     estrellas: 4,
     colores: ['Negro'],
-    modelo: ['Camiseta']
+    modelo: ['Ropa']
   },
   {
     id: 2,
