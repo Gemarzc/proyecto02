@@ -130,7 +130,7 @@ const productos = [
 
 const MODELOS = []
 
-/* let MODELO = ''
+let MODELO = ''
 
 const filtrar = () => {
   const filtered = []
@@ -140,7 +140,7 @@ const filtrar = () => {
     }
   }
   printProducts(filtered)
-} */
+}
 
 const fillModelos = (products) => {
   MODELOS.splice(0)
@@ -226,4 +226,9 @@ document.addEventListener('DOMContentLoaded', function () {
       currentColor = color1
     }
   }, 1000)
+})
+
+const searchButton = document.getElementById('search')
+searchButton.addEventListener('click', function (event) {
+  alert('Buscando')
 })
